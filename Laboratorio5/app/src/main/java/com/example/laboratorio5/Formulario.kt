@@ -19,15 +19,16 @@ fun Formulario(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        var username by remember { mutableStateOf("") }
-        var password by remember { mutableStateOf("") }
+        var fecha by remember { mutableStateOf("") }
+        var medida by remember { mutableStateOf("") }
+        var comentario by remember { mutableStateOf("") }
         Text(
             modifier = Modifier.fillMaxWidth(),
             text = "Fecha"
         )
         OutlinedTextField(
-            value = username,
-            onValueChange = { username = it },
+            value = fecha,
+            onValueChange = { fecha = it },
             label = { Text("Ingrese Fecha") },
             modifier = Modifier.fillMaxWidth()
         )
@@ -37,8 +38,8 @@ fun Formulario(navController: NavHostController) {
             text = "Medida"
         )
         OutlinedTextField(
-            value = password,
-            onValueChange = { password = it },
+            value = medida,
+            onValueChange = { medida = it },
             label = { Text("Ingrese la medida del sensor") },
             modifier = Modifier.fillMaxWidth()
         )
@@ -48,8 +49,8 @@ fun Formulario(navController: NavHostController) {
             text = "Comentario"
         )
         OutlinedTextField(
-            value = password,
-            onValueChange = { password = it },
+            value = comentario,
+            onValueChange = { comentario = it },
             label = { Text("Ingrese un Comentario") },
             modifier = Modifier.fillMaxWidth()
         )

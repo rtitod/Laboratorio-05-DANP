@@ -1,9 +1,12 @@
-package com.example.laboratorio5
+package com.example.laboratorio5.selector
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.laboratorio5.Consulta
+import com.example.laboratorio5.Formulario
+import com.example.laboratorio5.Switcher
 
 @Composable
 fun PantallasSelector(){

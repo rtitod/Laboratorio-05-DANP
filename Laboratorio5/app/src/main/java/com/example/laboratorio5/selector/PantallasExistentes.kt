@@ -1,4 +1,4 @@
-package com.example.laboratorio5
+package com.example.laboratorio5.selector
 
 sealed class PantallasExistentes(val route: String) {
     object SwitcherScreen: PantallasExistentes("switcher-scr")
